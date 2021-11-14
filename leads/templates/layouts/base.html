@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div class="max-w-6xl mx-auto  bg-gray-100">
+        {% include 'layouts/navbar.html' %}
+     {% block content %}
+    {% endblock %}
+
+        </div>
+</body>
+</html>
